@@ -12,11 +12,11 @@ class TRPYSignalPublisher(Node):
 
         # Parameters
         self.declare_parameter('topic', '/eagle4/trpy_cmd')
-        self.declare_parameter('rate_hz', 100.0)
+        self.declare_parameter('rate_hz', 200.0)
 
         # Thrust signal (around 9.8)
-        self.declare_parameter('thrust_mean', 8.8)
-        self.declare_parameter('thrust_amp', 0.5)
+        self.declare_parameter('thrust_mean', 0.0)
+        self.declare_parameter('thrust_amp', 0.0)
         self.declare_parameter('thrust_freq_hz', 2.5)
 
         # Euler angles (rad): OFF by default
@@ -27,9 +27,9 @@ class TRPYSignalPublisher(Node):
         self.declare_parameter('rpy_freq_hz', 0.2)
 
         # Angular velocity sinusoids (rad/s)
-        self.declare_parameter('w_amp_x', 0.3)
-        self.declare_parameter('w_amp_y', 0.3)
-        self.declare_parameter('w_amp_z', 0.3)
+        self.declare_parameter('w_amp_x', 10.5)
+        self.declare_parameter('w_amp_y', 15.0)
+        self.declare_parameter('w_amp_z', 10.0)
         self.declare_parameter('w_freq_hz', 2.5)
 
         # Gains (optional)
