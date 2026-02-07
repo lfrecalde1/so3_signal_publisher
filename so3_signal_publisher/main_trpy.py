@@ -11,7 +11,7 @@ class TRPYSignalPublisher(Node):
         super().__init__('trpy_signal_publisher')
 
         # Parameters
-        self.declare_parameter('topic', '/eagle4/trpy_cmd')
+        self.declare_parameter('topic', '/eagle10/trpy_cmd')
         self.declare_parameter('rate_hz', 200.0)
 
         # Thrust signal (around 9.8)
